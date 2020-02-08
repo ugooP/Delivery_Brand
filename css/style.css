@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -5,13 +9,8 @@ body {
 }
 
 /*HEADER*/
-
-.header_rond {
-    width: 30%;
-    position: absolute;
-}
 header {
-    height: 70px;
+    height: 8vh;
     display: flex;
         flex-flow: row;
         align-items: center;
@@ -20,19 +19,27 @@ header {
 header ul {
     margin: 0;
     list-style: none;
-    display: flex;
-        flex-direction: row;
-        justify-content: space-between;
 }
 header ul a {
     text-decoration: none;
+    margin-left: 15px;
+}
+header .first_ul {
+    z-index: 1;
+    margin-top: 80px;
+}
+header .first_ul li {
+    margin-top: 20px;
 }
 header .first_ul a {
-    color: black;
-    margin-left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
 }
 header .seconde_ul {
-    margin-right: 30px;
+    margin-right: 5%;
+    display: flex;
+        flex-direction: row;
 }
 header .seconde_ul .first_child {
     background-color: #299F9D;
@@ -44,7 +51,7 @@ header .seconde_ul .first_child {
     border-radius: 20px;
 }
 header .seconde_ul .seconde_child {
-    margin-left: 30px;
+    margin-left: 20px;
     padding: 3px 13px;
     font-weight: 700;
     font-size: 20px;
@@ -54,10 +61,17 @@ header .seconde_ul .seconde_child {
 }
 
 /*MAIN 1*/
-
+.deco_main1 {
+    width: 20%;
+    height: 30vh;
+    position: absolute;
+        top: 0;
+    background-image: url(../img/rond.svg);
+    background-position: right 0 bottom 0;
+}
 .main1 {
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     display: flex;
         flex-flow: row wrap;
         align-items: center;
@@ -81,17 +95,37 @@ header .seconde_ul .seconde_child {
 }
 
 /*MAIN 2*/
-
+.left_deco_main2 {
+    width: 470px;
+    height: 315px;
+    background-image: url(../img/oeuf.svg);
+    position: absolute;
+        left: -150px;
+        top: 850px;
+}
+.right_deco_main2 {
+    float: right;
+    width: 500px;
+    height: 650px;
+    background-image: url(../img/hexagone.svg);
+    position: absolute;
+        right: 0;
+        top: 750px;
+}
 .main2 {
     width: 100%;
-    height: 100vh;
+    padding: 20vh 0 15vh 0;
     display: flex;
         flex-flow: row wrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
 }
 .main2 img {
     width: 400px;
+}
+.main2 .txt {
+    margin-left: 10%;
+
 }
 .main2 .txt p {
     width: 500px;
@@ -109,16 +143,172 @@ header .seconde_ul .seconde_child {
     text-decoration: none;
 }
 
-/*MAIN 3*/
-
-.main3 {
+/*MAIN 4*/
+.main4 {
     width: 100%;
-    height: 100vh;
     display: flex;
         flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        align-content: space-around;
 }
-.main3 .main3_bg {
+.main4_title {
     width: 100%;
+    display: flex;
+        justify-content: center;
+}
+.main4_title h2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #299F9D;
+}
+.main4 .card {
+    width: 500px;
+    padding: 15px;
+    margin: 30px;
+}
+.main4 .card img {
+    float: left;
+}
+.main4 .card h2 {
+    font-weight: 800;
+    margin: 0;
+    color: #299F9D;
+    margin-left: 50px;
+}
+.main4 .card p {
+    margin-left: 50px;
+    text-align: justify;
+    color: grey;
+}
+
+/* MAIN 5 */
+.main5 {
+    padding: 20vh 0;
+    width: 100%;
+    height: 220px;
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.main5 img {
+    width: 20%;
+    margin-left: 2%;
+}
+.main5 .right_part {
+    background-color: #FFE957;
+    width: 75%;
+    height: 220px;
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.main5 .right_part a {
+    margin-left: 7%;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    padding: 20px 25px;
+    background-color: #299F9D;
+    border-radius: 30px;
+}
+.main5 .right_part p {
+    text-align: right;
+    margin-right: 2%;
+    font-size: 50px;
+    font-weight: 800;
+    color: #299F9D;
+}
+
+/* MAIN 6 */
+.btn_top_page img {
+    width: 15%;
+    margin: 100px 42.5% 0 42.5%;
+}
+.left_deco_main6 {
+    width: 655px;
+    height: 460px;
+    background-image: url(../img/hexagone.svg);
+    position: absolute;
+        top: 3100px;
+        left: -130px;
+    background-position: top 0 right 0;
+    transform: scale(.7);
+}
+.right_deco_main6 {
+    transform: rotate(180deg);
+    width: 520px;
+    height: 220px;
+    background-image: url(../img/oeuf.svg);
+    position: absolute;
+        right: 10px;
+        top: 3272px;
+        background-position: bottom 0 right 0;
+    }
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1800px) {
+    header ul a {
+        margin-left: -40%;
+    }
+    header .first_ul {
+        margin-top: 4%;
+    }
+    header .first_ul a {
+        font-size: 18px;
+    }
+    .main2 {
+        padding: 5vh 0 10vh 0;
+    }
+    .left_deco_main2, .right_deco_main2 {
+        display: none;
+    }
+    .main4 .card {
+        width: 450px;
+    }
+    .main5 .right_part a {
+        font-size: 30px;
+        margin-left: 5%;
+        text-align: center;
+        padding: 15px 20px;
+    }
+    .main5 .right_part p {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .btn_top_page img {
+        width: 20%;
+        margin: 0 40% 30px 40%;
+    }
+    .left_deco_main6, .right_deco_main6 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main1 {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .main2 {
+        padding-top: 10vh;
+    }
+    .main2 img {
+        display: none;
+    }
+    .main5 {
+        padding: 10vh 0;
+    }
+    .main5 img {
+        display: none;
+    }
+    .main5 .right_part {
+        width: 100%;
+    }
+    .main5 .right_part a {
+        margin-left: 8%;
+    }
 }
