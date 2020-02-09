@@ -93,5 +93,5 @@ sr.reveal('.main5 .right_part', {
     scale: 1,
     duration: 3000,
     origin: 'right',
-    distance: '800px'
+    distance: '800px',
 })
